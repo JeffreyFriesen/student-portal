@@ -1,53 +1,97 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
   <title>Student Portal</title>
   <style>
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(to right, #6a11cb, #2575fc);
-      color: white;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #e0f7fa, #e1bee7);
       text-align: center;
-      padding-top: 80px;
+      padding: 40px 20px;
       margin: 0;
+      color: #333;
+    }
+
+    .logo {
+      max-width: 180px;
+      margin-bottom: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     }
 
     h1 {
+      margin-bottom: 40px;
       font-size: 2.5em;
-      margin-bottom: 50px;
+      color: #4a148c;
     }
 
-    .button-container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 30px;
-    }
-
-    a {
-      background-color: white;
-      color: #333;
-      text-decoration: none;
-      font-size: 1.4em;
-      font-weight: bold;
+    .button {
+      display: inline-block;
+      margin: 20px;
       padding: 20px 40px;
+      font-size: 1.4em;
+      background-color: #7e57c2;
+      color: white;
+      text-decoration: none;
       border-radius: 12px;
-      width: 300px;
-      transition: transform 0.2s ease, background-color 0.3s ease;
-      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transition: background-color 0.3s, transform 0.2s;
     }
 
-    a:hover {
-      transform: translateY(-5px);
-      background-color: #f1f1f1;
+    .button:hover {
+      background-color: #5e35b1;
+      transform: scale(1.05);
+    }
+
+    .icon {
+      display: block;
+      font-size: 2em;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      margin-top: 60px;
+      font-size: 0.9em;
+      color: #555;
+    }
+
+    .contact-info {
+      margin-top: 10px;
+      font-size: 0.85em;
+    }
+
+    .managed {
+      font-style: italic;
+      margin-top: 15px;
+      color: #777;
     }
   </style>
 </head>
 <body>
+
+  <!-- Logo -->
+  <img src="The Wooden Cube.jpg" alt="School Logo" class="logo">
+
   <h1>Welcome to the Student Portal</h1>
-  <div class="button-container">
-    <a href="https://northumberlandschool.edclub.com" target="_self">Typing Practice</a>
-    <a href="https://docs.google.com" target="_self">Google Docs</a>
-  </div>
+
+  <a class="button" href="https://northumberlandschool.edclub.com" target="_self">
+    <span class="icon">⌨️</span> Typing Practice
+  </a>
+
+  <a class="button" href="https://docs.google.com" target="_self">
+    <span class="icon">📝</span> Google Docs
+  </a>
+
+  <footer>
+    © 2025 Northumberland School · Chromebook Student Access
+    <div class="contact-info">
+      Email: <a href="mailto:jeffreyfriesen@thewoodencube.ca">jeffreyfriesen@thewoodencube.ca</a>
+    </div>
+    <div class="managed">
+      This device is managed by <strong>The Wooden Cube</strong>.
+    </div>
+  </footer>
+
 </body>
 </html>
